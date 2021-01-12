@@ -277,6 +277,12 @@ public class MaterializedViewSupervisor implements Supervisor
   }
 
   @Override
+  public void resetToTime(long timestamp)
+  {
+    throw new UnsupportedOperationException("resetToTime() is not supported in MaterializedViewSupervisor");
+  }
+
+  @Override
   public void checkpoint(int taskGroupId, DataSourceMetadata checkpointMetadata)
   {
     // do nothing

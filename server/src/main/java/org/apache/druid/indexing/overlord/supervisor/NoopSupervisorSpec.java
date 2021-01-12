@@ -150,6 +150,11 @@ public class NoopSupervisorSpec implements SupervisorSpec
       }
 
       @Override
+      public void resetToTime(long timestamp)
+      {
+      }
+
+      @Override
       public void checkpoint(int taskGroupId, DataSourceMetadata checkpointMetadata)
       {
 

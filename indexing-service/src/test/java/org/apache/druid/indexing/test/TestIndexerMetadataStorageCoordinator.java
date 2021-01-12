@@ -64,6 +64,12 @@ public class TestIndexerMetadataStorageCoordinator implements IndexerMetadataSto
   }
 
   @Override
+  public boolean overrideDataSourceMetadata(String dataSource, DataSourceMetadata dataSourceMetadata)
+  {
+    return false;
+  }
+
+  @Override
   public boolean resetDataSourceMetadata(String dataSource, DataSourceMetadata dataSourceMetadata)
   {
     return false;
